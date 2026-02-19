@@ -1,0 +1,15 @@
+repository_type: pipeline
+
+nf_core_version: 3.5.2
+
+lint: {}
+
+template:
+  org: nf-core
+  name: bnab
+  description: pipeline to create HIV-1 bnAbs for project
+  author: Robert W. Link
+  version: 1.0.0dev
+  force: true
+  outdir: pipeline
+  is_nfcore: true
