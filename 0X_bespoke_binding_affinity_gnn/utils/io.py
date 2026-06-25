@@ -15,7 +15,7 @@ class InteractionIO:
     """
     X
     """
-    
+
     def load_interaction_samplesheet(self, path: Path) -> pd.DataFrame:
         df = pd.read_csv(path)
         return df
@@ -32,4 +32,3 @@ class InteractionIO:
 def load_interaction_model(checkpoint_path: Path) -> AbAffinityPredictionModel:
     model = AbAffinityPredictionModel.load_from_checkpoint(checkpoint_path)
     return model
-

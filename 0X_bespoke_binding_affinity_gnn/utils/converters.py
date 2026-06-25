@@ -1,7 +1,9 @@
 """
 X
 """
+
 from __future__ import annotations
+
 from pathlib import Path
 from Bio.PDB import MMCIFParser, PDBIO
 
@@ -21,11 +23,10 @@ class FileTypeConverter:
         io = PDBIO()
         io.set_structure(structure)
         io.save(pdb_path)
-        
+
     def cif_to_pdf(self, cif_path: Path, pdb_path: Path) -> None:
         """Graphein needs data to be in PDB format, so converting
         for the sake of proper inputs
         """
         structure = self._load_cif(cif_path)
         self._write_pdb(structure)
-        
