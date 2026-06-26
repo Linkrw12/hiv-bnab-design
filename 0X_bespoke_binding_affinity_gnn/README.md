@@ -1,3 +1,0 @@
-# Affinity Prediction Model
-
-None
